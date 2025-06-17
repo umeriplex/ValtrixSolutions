@@ -152,7 +152,7 @@ const Header = ({ toggleTheme, theme }) => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5 }}
             >
-              DevSolutions
+              ValtrixSolutions
             </motion.span>
           </Logo>
 

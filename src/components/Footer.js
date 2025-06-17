@@ -1,7 +1,7 @@
 // src/components/Footer.js
 import React from 'react';
 import styled from 'styled-components';
-import { FaGithub, FaLinkedin, FaTwitter, FaInstagram } from 'react-icons/fa';
+import { FaGithub, FaLinkedin, FaFacebook, FaInstagram } from 'react-icons/fa';
 
 const FooterContainer = styled.footer`
   background: ${({ theme }) => theme.background};
@@ -63,10 +63,10 @@ const Footer = () => {
       <div className="container">
         <FooterContent>
           <SocialLinks>
-            <SocialLink href="#" aria-label="GitHub"><FaGithub /></SocialLink>
-            <SocialLink href="#" aria-label="LinkedIn"><FaLinkedin /></SocialLink>
-            <SocialLink href="#" aria-label="Twitter"><FaTwitter /></SocialLink>
-            <SocialLink href="#" aria-label="Instagram"><FaInstagram /></SocialLink>
+            <SocialLink href="https://github.com/umeriplex" target='_blank' aria-label="GitHub"><FaGithub /></SocialLink>
+            <SocialLink href="https://www.linkedin.com/in/umer-iftikhar-a3842122a/" target='_blank' aria-label="LinkedIn"><FaLinkedin /></SocialLink>
+            <SocialLink href="https://www.instagram.com/_ummmer/" target='_blank' aria-label="Instagram"><FaInstagram /></SocialLink>
+            <SocialLink href="https://web.facebook.com/umeriftikhar2526/" target='_blank' aria-label="Facebook"><FaFacebook /></SocialLink>            
           </SocialLinks>
           
           <FooterLinks>
@@ -79,7 +79,7 @@ const Footer = () => {
           </FooterLinks>
           
           <Copyright>
-            &copy; {new Date().getFullYear()} DevSolutions. All rights reserved.
+            &copy; {new Date().getFullYear()} ValtrixSolutions. All rights reserved.
           </Copyright>
         </FooterContent>
       </div>

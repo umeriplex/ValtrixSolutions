@@ -2,7 +2,6 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import styled from 'styled-components';
-import { FiGithub, FiExternalLink } from 'react-icons/fi';
 import { useInView } from 'react-intersection-observer';
 
 const ProjectsContainer = styled.section`
@@ -95,24 +94,6 @@ const TechTag = styled.span`
   font-size: 0.8rem;
 `;
 
-const ProjectLinks = styled.div`
-  display: flex;
-  gap: 1rem;
-`;
-
-const ProjectLink = styled.a`
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  color: ${({ theme }) => theme.primary};
-  font-weight: 500;
-  transition: all 0.3s ease;
-
-  &:hover {
-    color: ${({ theme }) => theme.accent};
-  }
-`;
-
 const FilterButtons = styled.div`
   display: flex;
   justify-content: center;
@@ -140,29 +121,29 @@ const projects = [
   {
     id: 1,
     title: 'E-commerce Platform',
-    description: 'A full-featured e-commerce platform with product listings, cart functionality, and payment processing.',
-    image: 'https://via.placeholder.com/600x400?text=E-commerce',
-    tags: ['React', 'Node.js', 'MongoDB', 'Stripe'],
+    description: 'A full-featured e-commerce platform with product listings, cart functionality, payment processing and custom product design.',
+    image: 'https://www.uberprints.com/assets/images/hp/banners/custom-t-shirts-spring-break2-1328x640.webp',
+    tags: ['Flutter', 'Node.js', 'MongoDB', 'Stripe'],
     github: '#',
-    live: '#',
+    live: 'https://www.uberprints.com/?srsltid=AfmBOorC3yZJBcRhjNSeT5IB4muNJMsUCcBod7aMkPN3tSQ3DFbLxLtB',
     category: 'web'
   },
   {
     id: 2,
-    title: 'Task Management App',
-    description: 'A productivity application for managing tasks with drag-and-drop functionality and team collaboration.',
-    image: 'https://via.placeholder.com/600x400?text=Task+App',
-    tags: ['React', 'Firebase', 'Material UI'],
+    title: 'Quran Islamic App',
+    description: 'An application for reading and learning the Quran with audio recitations and translations.',
+    image: 'https://umeriplex.github.io/webpage/images/ai.jpg',
+    tags: ['Flutter', 'Firebase', 'Material UI'],
     github: '#',
     live: '#',
-    category: 'web'
+    category: 'mobile'
   },
   {
     id: 3,
-    title: 'Fitness Tracker Mobile App',
-    description: 'Mobile application for tracking workouts, nutrition, and fitness progress with data visualization.',
-    image: 'https://via.placeholder.com/600x400?text=Fitness+App',
-    tags: ['React Native', 'Firebase', 'Redux'],
+    title: 'Online Consultation System',
+    description: 'A platform for connecting patients with healthcare professionals for virtual consultations.',
+    image: 'https://umeriplex.github.io/webpage/images/wc.jpg',
+    tags: ['Flutter', 'Firebase', 'Laravel', 'MySQL'],
     github: '#',
     live: '#',
     category: 'mobile'
@@ -171,32 +152,63 @@ const projects = [
     id: 4,
     title: 'AI Chatbot',
     description: 'A conversational AI chatbot integrated with natural language processing capabilities.',
-    image: 'https://via.placeholder.com/600x400?text=AI+Chatbot',
-    tags: ['Python', 'TensorFlow', 'NLTK'],
+    image: 'https://umeriplex.github.io/webpage/images/cb.jpg',
+    tags: ['Python', 'TensorFlow', 'NLTK', 'OpenAI', 'Flutter'],
     github: '#',
     live: '#',
     category: 'ai'
   },
   {
     id: 5,
-    title: 'Weather Dashboard',
-    description: 'Real-time weather information dashboard with interactive maps and forecasting.',
-    image: 'https://via.placeholder.com/600x400?text=Weather+App',
-    tags: ['JavaScript', 'API', 'Chart.js'],
+    title: 'Online Book Store',
+    description: 'An e-commerce platform for buying and selling books with user reviews and ratings.',
+    image: 'https://umeriplex.github.io/webpage/images/bs.jpg',
+    tags: ['Flutter', 'Firebase'],
+    github: '#',
+    live: '#',
+    category: 'mobile'
+  },
+  {
+    id: 6,
+    title: 'Music Streaming App',
+    description: 'A platform for streaming and discovering music with personalized playlists and recommendations.',
+    image: 'https://umeriplex.github.io/webpage/images/ap.jpg',
+    tags: ['Android', 'Kotlin', 'Firebase'],
+    github: '#',
+    live: '#',
+    category: 'mobile'
+  },
+  {
+    id: 7,
+    title: 'Barber Booking Web App',
+    description: 'A web application for booking barber appointments and managing schedules.',
+    image: 'https://cdn.sanity.io/images/tepqsdgu/production/da025f3ac1abf7f21f13a79d8d9aa5b9a72498ea-960x900.jpg',
+    tags: ['React', 'Styled Components', 'Framer Motion'],
     github: '#',
     live: '#',
     category: 'web'
   },
   {
-    id: 6,
-    title: 'Blockchain Explorer',
-    description: 'A tool for exploring blockchain transactions and wallet balances with real-time updates.',
-    image: 'https://via.placeholder.com/600x400?text=Blockchain',
-    tags: ['React', 'Web3.js', 'Ethereum'],
+    id: 8,
+    title: 'Grocery Delivery App',
+    description: 'A web application for ordering groceries online with home delivery.',
+    image: 'https://www.deepcovemarket.com/uploads/1/3/8/1/138136616/dsc-4371_orig.jpg',
+    tags: ['Flutter', 'Firebase', 'Google Maps', 'Dart', 'Node.js'],
     github: '#',
     live: '#',
-    category: 'blockchain'
+    category: 'web'
+  },
+  {
+    id: 9,
+    title: 'App Locker',
+    description: 'A mobile application for securing personal apps with a password or biometric authentication.',
+    image: 'https://umeriplex.github.io/webpage/images/al.jpg',
+    tags: ['Android', 'Java', 'SQLite', 'Room Database'],
+    github: '#',
+    live: '#',
+    category: 'mobile'
   }
+
 ];
 
 const Projects = () => {
@@ -214,8 +226,7 @@ const Projects = () => {
     { id: 'all', name: 'All Projects' },
     { id: 'web', name: 'Web Development' },
     { id: 'mobile', name: 'Mobile Apps' },
-    { id: 'ai', name: 'AI/ML' },
-    { id: 'blockchain', name: 'Blockchain' }
+    { id: 'ai', name: 'AI/ML' }
   ];
 
   const containerVariants = {
@@ -294,14 +305,6 @@ const Projects = () => {
                       <TechTag key={i}>{tag}</TechTag>
                     ))}
                   </ProjectTech>
-                  <ProjectLinks>
-                    <ProjectLink href={project.github} target="_blank" rel="noopener noreferrer">
-                      <FiGithub /> Code
-                    </ProjectLink>
-                    <ProjectLink href={project.live} target="_blank" rel="noopener noreferrer">
-                      <FiExternalLink /> Live Demo
-                    </ProjectLink>
-                  </ProjectLinks>
                 </ProjectContent>
               </ProjectCard>
             ))}

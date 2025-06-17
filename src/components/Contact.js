@@ -196,7 +196,7 @@ const Contact = () => {
                 </InfoIcon>
                 <InfoContent>
                   <InfoTitle>Location</InfoTitle>
-                  <InfoText>San Francisco, CA</InfoText>
+                  <InfoText>Karachi, Pakistan</InfoText>
                 </InfoContent>
               </InfoItem>
               
@@ -206,7 +206,7 @@ const Contact = () => {
                 </InfoIcon>
                 <InfoContent>
                   <InfoTitle>Phone</InfoTitle>
-                  <InfoText>+1 (555) 123-4567</InfoText>
+                  <InfoText>+92 340 2093883</InfoText>
                 </InfoContent>
               </InfoItem>
               
@@ -216,7 +216,7 @@ const Contact = () => {
                 </InfoIcon>
                 <InfoContent>
                   <InfoTitle>Email</InfoTitle>
-                  <InfoText>contact@devsolutions.com</InfoText>
+                  <InfoText>umeriftikhar2526@gmail.com</InfoText>
                 </InfoContent>
               </InfoItem>
             </ContactInfo>

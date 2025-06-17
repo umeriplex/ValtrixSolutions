@@ -2,7 +2,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import styled from 'styled-components';
-import { FaCode, FaMobile, FaServer, FaChartLine, FaCloud, FaShieldAlt } from 'react-icons/fa';
+import { FaCode, FaMobile, FaServer, FaCloud, FaShieldAlt, FaComments } from 'react-icons/fa';
 import { useInView } from 'react-intersection-observer';
 
 const ServicesContainer = styled.section`
@@ -66,11 +66,15 @@ const services = [
     title: 'Backend Development',
     description: 'Scalable backend solutions with Node.js, Python, Django, and database management.'
   },
+
+
+  // Chatbot Development
   {
-    icon: <FaChartLine />,
-    title: 'Data Analytics',
-    description: 'Data visualization and analytics solutions to help you make informed business decisions.'
+    icon: <FaComments />,
+    title: 'Chatbot Development',
+    description: 'AI-powered chatbots for customer support and engagement.'
   },
+
   {
     icon: <FaCloud />,
     title: 'Cloud Solutions',

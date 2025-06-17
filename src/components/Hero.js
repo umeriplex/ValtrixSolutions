@@ -2,8 +2,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import styled from 'styled-components';
-import { FaGithub, FaLinkedin, FaTwitter, FaArrowDown } from 'react-icons/fa';
-
+import { FaGithub, FaLinkedin, FaFacebook, FaArrowDown, FaInstagram } from 'react-icons/fa';
 const HeroContainer = styled.section`
   min-height: 100vh;
   display: flex;
@@ -110,24 +109,6 @@ const SocialLink = styled.a`
   }
 `;
 
-const HeroImage = styled(motion.div)`
-  flex: 1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 20px;
-    box-shadow: 0 20px 40px rgba(0,0,0,0.2);
-  }
-
-  @media (max-width: 768px) {
-    margin-bottom: 2rem;
-  }
-`;
-
 const ScrollDown = styled(motion.div)`
   position: absolute;
   bottom: 2rem;
@@ -155,7 +136,7 @@ const Hero = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.2 }}
             >
-              Hi, I'm <span>John Doe</span>
+              Hi, I'm <span>Umer Iftikhar</span>
             </HeroTitle>
             <HeroTitle
               initial={{ opacity: 0, y: 20 }}
@@ -184,18 +165,13 @@ const Hero = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 1 }}
             >
-              <SocialLink href="#" aria-label="GitHub"><FaGithub /></SocialLink>
-              <SocialLink href="#" aria-label="LinkedIn"><FaLinkedin /></SocialLink>
-              <SocialLink href="#" aria-label="Twitter"><FaTwitter /></SocialLink>
+              <SocialLink href="https://github.com/umeriplex" target='_blank' aria-label="GitHub"><FaGithub /></SocialLink>
+              <SocialLink href="https://www.linkedin.com/in/umer-iftikhar-a3842122a/" target='_blank' aria-label="LinkedIn"><FaLinkedin /></SocialLink>
+              <SocialLink href="https://www.instagram.com/_ummmer/" target='_blank' aria-label="Instagram"><FaInstagram /></SocialLink>
+              <SocialLink href="https://web.facebook.com/umeriftikhar2526/" target='_blank' aria-label="Facebook"><FaFacebook /></SocialLink>
+
             </SocialLinks>
           </HeroText>
-          <HeroImage
-            initial={{ opacity: 0, scale: 0.9 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.5, delay: 0.5 }}
-          >
-            <img src="https://via.placeholder.com/500x500" alt="Profile" />
-          </HeroImage>
         </HeroContent>
         <ScrollDown
           initial={{ opacity: 0, y: 20 }}

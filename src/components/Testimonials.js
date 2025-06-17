@@ -139,21 +139,21 @@ const Dot = styled.button`
 const testimonials = [
   {
     id: 1,
-    text: "Working with John was an absolute pleasure. His attention to detail and problem-solving skills helped us deliver our project ahead of schedule. The code quality was exceptional and well-documented.",
+    text: "Working with Umer was an absolute pleasure. His attention to detail and problem-solving skills helped us deliver our project ahead of schedule. The code quality was exceptional and well-documented.",
     author: "Sarah Johnson",
     role: "CEO at TechSolutions Inc.",
     image: "https://randomuser.me/api/portraits/women/44.jpg"
   },
   {
     id: 2,
-    text: "John transformed our outdated website into a modern, responsive platform that has significantly increased our conversion rates. His technical expertise and communication throughout the project were outstanding.",
+    text: "Umer transformed our outdated website into a modern, responsive platform that has significantly increased our conversion rates. His technical expertise and communication throughout the project were outstanding.",
     author: "Michael Chen",
     role: "Marketing Director at Global Corp",
     image: "https://randomuser.me/api/portraits/men/32.jpg"
   },
   {
     id: 3,
-    text: "The mobile application John developed for our startup exceeded all our expectations. He not only delivered a beautiful UI but also optimized the performance to handle our growing user base seamlessly.",
+    text: "The mobile application Umer developed for our startup exceeded all our expectations. He not only delivered a beautiful UI but also optimized the performance to handle our growing user base seamlessly.",
     author: "Emma Rodriguez",
     role: "Founder of StartupX",
     image: "https://randomuser.me/api/portraits/women/63.jpg"
