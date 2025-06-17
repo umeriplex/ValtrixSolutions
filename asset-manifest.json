@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/react-app/static/css/main.e6c13ad2.css",
-    "main.js": "/react-app/static/js/main.2c67958d.js",
-    "static/js/453.a5b25d5b.chunk.js": "/react-app/static/js/453.a5b25d5b.chunk.js",
-    "index.html": "/react-app/index.html",
-    "main.e6c13ad2.css.map": "/react-app/static/css/main.e6c13ad2.css.map",
-    "main.2c67958d.js.map": "/react-app/static/js/main.2c67958d.js.map",
-    "453.a5b25d5b.chunk.js.map": "/react-app/static/js/453.a5b25d5b.chunk.js.map"
+    "main.css": "/ValtrixSolutions/static/css/main.e6c13ad2.css",
+    "main.js": "/ValtrixSolutions/static/js/main.76143697.js",
+    "static/js/453.a5b25d5b.chunk.js": "/ValtrixSolutions/static/js/453.a5b25d5b.chunk.js",
+    "index.html": "/ValtrixSolutions/index.html",
+    "main.e6c13ad2.css.map": "/ValtrixSolutions/static/css/main.e6c13ad2.css.map",
+    "main.76143697.js.map": "/ValtrixSolutions/static/js/main.76143697.js.map",
+    "453.a5b25d5b.chunk.js.map": "/ValtrixSolutions/static/js/453.a5b25d5b.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.e6c13ad2.css",
-    "static/js/main.2c67958d.js"
+    "static/js/main.76143697.js"
   ]
 }
